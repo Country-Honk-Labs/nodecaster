@@ -11,7 +11,7 @@ This project serves as a showcase for scalable agent orchestration, plugin exper
 NodeCaster is composed of loosely coupled microservices:
 
 - **Java/Kotlin Agents**: Lifecycle-driven actors reacting to events and performing actions.
-- **AI Engine (Python)**: Receives agent states and environment data; returns decisions using ML or heuristic logic.
+- **AI Engine (Spring Boot + Kotlin)**: Receives agent states and environment data; returns decisions using ML or heuristic logic.
 - **Plugins (Java)**: Modular decision strategies (e.g., round-robin, priority-based, AI-driven).
 - **Kafka Topics**: Central communication bus for distributing events and decisions across services.
 
@@ -59,7 +59,7 @@ This will launch:
 
 - Kafka broker and ZooKeeper
 - All agents (Java/Kotlin)
-- AI engine (Python Flask app)
+- AI engine (Spring Boot app)
 - Plugin registry
 
 ### Project Structure
